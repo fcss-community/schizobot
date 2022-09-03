@@ -15,9 +15,9 @@ for event in longpoll.listen():
     if event.type == VkBotEventType.MESSAGE_NEW and event.obj.text:
         message = event.obj.text
         if message.startswith("schizo"):  
-            test_list = ['.com', '.ru', '.net', '.org', '.info', '.biz', '.io', '.co', "https://", "http://", "@", "tg", "телега", "telega", "телеграм", "телеграмм", "telegram", "telegramm"] # банворды
-            link_matches = [ele for ele in test_list if(ele in message)]
-            if link_matches:
+            banwords = ['.com', '.ru', '.net', '.org', '.info', '.biz', '.io', '.co', "https://", "http://", "@", "tg", "телега", "telega", "телеграм", "телеграмм", "telegram", "telegramm"] # банворды
+            banword_matches = [b for b in banwords if(b in message)]
+            if banword_matches:
                 vk.messages.send(
                     peer_id=event.obj.peer_id,
                     message='аааа бля нельзя такие сообщения чел',
