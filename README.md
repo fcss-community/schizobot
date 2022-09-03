@@ -7,8 +7,6 @@
   <a href="https://github.com/fcss-community/schizobot/issues"><img src="https://img.shields.io/github/issues/fcss-community/schizobot?colorA=151515&colorB=8C977D&style=for-the-badge&logo=bugatti"></a>
 
   <a href="https://github.com/fcss-community/schizobot/network/members"><img src="https://img.shields.io/github/forks/fcss-community/schizobot?colorA=151515&colorB=D9BC8C&style=for-the-badge&logo=github"></a>
-  <br/>
-  Нейросетевой бот для бесед ВК
 </p>
 
 # Информация
