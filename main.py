@@ -8,7 +8,7 @@ generator = pipeline('text-generation', model='TheBakerCat/2chan_ruGPT3_small')
 set_seed(42)
 
 vk_session = vk_api.VkApi(token="ТОКЕН")
-longpoll = VkBotLongPoll(vk_session, '215377650')
+longpoll = VkBotLongPoll(vk_session, 'id группы')
 vk = vk_session.get_api()
 
 for event in longpoll.listen():
